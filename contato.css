@@ -29,6 +29,16 @@ h1{
     transform: translate(-30px -10px);
     font-size: 35px;
     font-family: 'blinker';
+    color:#FFFFFF;
+    color: #000;
+    text-shadow:
+    -1px -1px -px #FFA500,
+    -1px 4px 0px #FFF,
+    1px -1px -px #FFF,
+    1px 0px 0px #FFF;
+}
+nav {
+    position: absolute;
 }
 
 main{
@@ -40,7 +50,7 @@ form{
     margin: 40px 0;
 }
 
-form label, from p{
+form label, form p{
     display:block;
     font-size: 20px;
     margin: 0 0 10px;
