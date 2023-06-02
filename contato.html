@@ -4,13 +4,22 @@
     <title>Contato</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
     <header>
     <img id="logo" src="logo.png">
     <h1 class="titulo-principal">Linguagens de Programação</h1>
     </header>
-    <br>
+    
+    <nav>
+        <ul>
+            <li><o href="index.thml">Home</o></li>
+            <li><o href="produtos.html">Produtos</o></li>
+            <li><o href="contato.html">Contato</o></li>
+        </ul>
+    </nav>
+    <br><br>
     <form>
         <label for="nomesobrenome">Nome e sobrenome</label>
         <input type="text" name="nome" id="nomesobrenome" 
@@ -20,12 +29,48 @@
         <input type="text" name="email" id="email"
         class="input-padrao" placeholder="seuemail@dominio.com" required>
         <br><br>
-        <label for="telefone">telefone</label>
+        <label for="telefone">Telefone</label>
         <input type="text" name="telefone" id="telefone"
         class="input-padrao" placeholder="(XX)XXXXX-XXXX" required>
         <br><br>
         <label for="mensagem">Mensagem</label>
         <textarea cols="70" rows="10" id="mensagem" required></textarea>
-    </form>
+
+        <section>
+                     <p>Como prefere nosso contato?</p>
+                     <input type="radio" name="contato" value="email" id="radio-email">
+                     <label for="radio-email">Email</label>
+                     
+                     <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                     <label for="radio-telefone">Telefone</label>
+
+                     <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                     <label for="radio-whatsapp">Whatsapp</label>
+
+                </section>
+
+                <section>
+                     <p>Qual o horário prefere ser atendido</p>
+                     <select>
+                         <option>Manhã</option><!--dropdown - seleções selecionáveis-->
+                         <option>Tarde</option>
+                         <option>Noite</option>
+                     </select>
+                </section> <br>
+
+                <label class="checkbox">
+                <input type="checkbox">Gostaria de receber nossas novidades no email?</label> <br><br>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+
+
+                </form>
+ </main>
+
+<footer>
+    <img id="logo1" src="logo.png">
+    <p class="copyright">&copy; Copyright -- Dartora</p>
+</footer>
+    
 </body>
 </html>
